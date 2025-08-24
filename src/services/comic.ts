@@ -16,7 +16,7 @@ export const getComicPage = async (base64Url: string) => {
 
     // TODO: implement data caching if supported by environment.
 
-    const chapters = results.chapters.filter(chapter => ({
+    const chapters = results.chapters.map(chapter => ({
         name: chapter.title,
         chapter: chapter.chapterTitle,
         url: chapter.url,
