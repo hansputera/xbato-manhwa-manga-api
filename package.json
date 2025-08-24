@@ -7,7 +7,11 @@
 		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
 	},
 	"dependencies": {
-		"hono": "^4.9.4"
+		"@hono/arktype-validator": "^2.0.1",
+		"@jsonjoy.com/base64": "^1.1.2",
+		"arktype": "^2.1.20",
+		"hono": "^4.9.4",
+		"xbato-api-wrapper": "^1.0.0"
 	},
 	"devDependencies": {
 		"wrangler": "^4.32.0"
