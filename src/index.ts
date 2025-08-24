@@ -30,9 +30,9 @@ app.get('/comic/:comicUrl', arktypeValidator('param', getComicPageValidator), as
 });
 
 // Get chapter images endpoint
-app.get('/images/:chapterUrl', arktypeValidator('query', getChapterImagesValidator), async ctx => {
-  const queries = ctx.req.valid('query');
-  const results = await getChapterImages(queries.chapterUrl);
+app.get('/images/:chapterUrl', arktypeValidator('param', getChapterImagesValidator), async ctx => {
+  const params = ctx.req.valid('param');
+  const results = await getChapterImages(params.chapterUrl);
 
   return ctx.json({
     data: results,
