@@ -21,8 +21,8 @@ importers:
         specifier: ^4.9.4
         version: 4.9.4
       xbato-api-wrapper:
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.1.1
+        version: 1.1.1
     devDependencies:
       wrangler:
         specifier: ^4.32.0
@@ -607,8 +607,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xbato-api-wrapper@1.1.0:
-    resolution: {integrity: sha512-sxsbU3PJAYmL/k8fhpynU1ckXCIcLPIDaDwuvkMPbs1ANhIHiIh0AUB1pzuAgn60MQd8sCjBuvFoNZ90s4PXaQ==}
+  xbato-api-wrapper@1.1.1:
+    resolution: {integrity: sha512-wkFQ2WiWAlyd3jKzw94E2qZ+V0IFm85GY7+dbA0d1s7cnGL6O22/nQDPZpWcefo+qd/ErWq82z0Zr7GRpcodOg==}
 
   youch-core@0.3.3:
     resolution: {integrity: sha512-ho7XuGjLaJ2hWHoK8yFnsUGy2Y5uDpqSTq1FkHLK4/oqKtyUU1AFbOOxY4IpC9f0fTLjwYbslUz0Po5BpD1wrA==}
@@ -1125,7 +1125,7 @@ snapshots:
 
   ws@8.18.0: {}
 
-  xbato-api-wrapper@1.1.0:
+  xbato-api-wrapper@1.1.1:
     dependencies:
       cheerio: 1.1.2
       ky: 1.9.0
