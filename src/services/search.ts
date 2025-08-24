@@ -31,5 +31,6 @@ export const searchQuery = async (query: string) => {
         },
         read_direction: comic.get('readDirection'),
         artists: comic.get('artists'),
+        last_chapter: comic.get('last_chapterNodes')?.[0]?.chaNum,
     }));
 }

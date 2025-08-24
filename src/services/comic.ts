@@ -1,4 +1,4 @@
-import { fromBase64 } from "@jsonjoy.com/base64"
+import { fromBase64, toBase64 } from "@jsonjoy.com/base64"
 import { XBATO_URL } from "../const";
 import { xbato } from "../libraries/xbato";
 
@@ -20,6 +20,7 @@ export const getComicPage = async (base64Url: string) => {
         name: chapter.title,
         chapter: chapter.chapterTitle,
         url: chapter.url,
+        url_detail: toBase64(new TextEncoder().encode(chapter.url)),
         published_at: chapter.publishedAt,
     }));
 

@@ -1,5 +1,5 @@
 import { type } from 'arktype';
 
 export const searchQueryValidator = type({
-    query: 'string.trim',
+    query: 'string > 3',
 });
